@@ -1,7 +1,7 @@
 const searchWiki = () => {
         const searchInput = document.getElementById('search-input');
         const searchText = searchInput.value;
-        searchText.value = '';
+        searchInput.value = '';
 
         // load data
         const url = `https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info&inprop=url&utf8=&format=json&origin=*&srlimit=20&srsearch=${searchText}`;
