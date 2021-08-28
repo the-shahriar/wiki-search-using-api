@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki Search - by Shahriar Islam</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <img width="150px" height="137px" class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/657px-Wikipedia-logo-v2.svg.png" alt="">
+
+        <!-- Search input -->
+        <div class="search-form js-search-form">
+            <input
+              placeholder="Type a keyword and press Enter to search"
+              type="search"
+              class="search-input"
+              id="search-input"
+              autofocus
+            />
+            <button onclick="searchWiki()" class="search-btn" id="search-btn">Search</button>
+          </div>
+    </header>
+
+    <main>
+        <section class="search-results" id="search-results"></section>
+    </main>
+    <footer class="footer">Developed by<a href="#"> Shahriar Islam</a></footer>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>
